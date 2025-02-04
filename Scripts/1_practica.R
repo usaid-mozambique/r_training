@@ -6,11 +6,14 @@ library(tidyverse)
 
 df <- read_csv("Data/example_dataset.csv")
 
+
 df1 <- df |> 
   filter(snu == "Sofala") |>
   mutate(pais = "Mocambique")
 
 df1 |> 
-  write_csv("Desktop/example_processed.csv")
+  write_csv("Dataout/example_processed.csv")
 
 View(df)
+
+# HI TEAM, watch this!!!
